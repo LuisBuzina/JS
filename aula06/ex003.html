@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer003</title>
+    <style>
+        body{
+            background-color: darkblue;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1{
+            color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Óla, mundo!</h1>
+    <p>Ja me livrei da maldição</p>
+    <script>
+        
+        var n1 = window.prompt("Digite um número: ") //window.prompt retorna string
+        var n2 = window.prompt("Digite outro numero: ") //window.prompt retorna string
+        var s1 = n1 + n2 /* o + está concatenando ao inves de somar
+         por serem strings precisa converter */
+        window.alert("O resultado da soma dos números é: " + s1)
+        
+        var n3 = Number.parseInt(window.prompt("Digite um número: ")) /*Convertendo numero 
+        para inteiro direto quando recebe o dado */
+        var n4 = Number.parseInt(window.prompt("Digite outro numero: "))
+        var s2 = n3 + n4 /* o + está somando pelas variaveis terem sido convertidas pra inteiros */
+        window.alert("O resultado da soma dos números é: " + s2)
+
+        var n5 = Number.parseFloat(window.prompt("Digite um número: ")) /*Convertendo numero 
+        para real direto quando recebe o dado */
+        var n6 = Number.parseFloat(window.prompt("Digite outro numero: "))
+        var s3 = n5 + n6 /* o + está somando pelas variaveis terem sido 
+        convertidas pra real */
+        window.alert("O resultado da soma dos números é: " + s3)
+
+        var n7 = Number(window.prompt("Digite um número: ")) /* o JS decide por si só se é
+        float ou inteiro */
+        var n8 = Number(window.prompt("Digite outro numero: "))
+        var s4 = n7 + n8 /* o + está somando pelas variaveis terem sido 
+        convertidas pra real */
+        window.alert("O resultado da soma dos números é: " + s4)
+
+        window.alert("O resultado de todos os valore é: " + String(s1) + ", " + s2.toString() + ", " + String(s3) + ", " + s4.toString()) /*concatenação padrão e 
+        conversão de Number para String */
+        
+        window.alert(`O resultado de todos os valore é: ${s1}, ${s2}, ${s3} e ${s4}`) /*usa o template `(crase) para possibilitar o uso do string ${} 
+        place holder, coloca a variavel dentro das chaves */
+        
+        //String(n) pra converter a variavel para String
+        //n.toString() para converter a variavel para String
+
+        /*  number + number = adição
+            string + string = concatenação */
+
+    </script>
+</body>
+</html>
