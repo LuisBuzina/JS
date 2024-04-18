@@ -1,6 +1,6 @@
 function enviar(){
     var numero = document.querySelector("input#txtnumero")
-    var res = document.querySelector("div#resposta") //para visualizar direto no HTML do programa
+    //var res = document.querySelector("div#resposta") //para visualizar direto no HTML do programa
     var tab = document.getElementById("selcttabuada") //para interação com a tabela de respostas
 
     var numeroc = Number(numero.value)
