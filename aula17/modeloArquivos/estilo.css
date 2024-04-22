@@ -1,6 +1,6 @@
 body{
     background: lightblue;
-    font: normal 15pt Arial;
+    font: normal 14pt Arial;
 }
 
 header{
@@ -12,9 +12,13 @@ section{
     background: white;
     border-radius: 5px;
     padding: 15px;
-    width: 500px;
+    width: 520px;
     margin: auto;
     box-shadow: 5px 5px 10px lightgrey;
+}
+
+select{
+    width: 200px;
 }
 
 footer{
